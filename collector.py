@@ -1,5 +1,6 @@
 import requests
-from dbWriter import write
+from dbWriter import writeap,writecit
+import time
 
 adr = "http://dt.miet.ru/ppo_it/api/"
 token = ""
@@ -18,4 +19,8 @@ def getaps():
                     t = float(resfin["temperature"])
                     write(cit['city_id'],are,hous,apart,t)
 
-
+def getcit():
+    respc = requests.get(adr).text
+    for cit in respc['data']:
+        resp = respa = requests.get(adr+":"+cit['city_id']).text
+        writecit(cit['city_id'], resp['temperature'])
