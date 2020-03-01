@@ -1,12 +1,19 @@
 from pymongo import MongoClient
-import datetime
+from datetime import datetime
+import random
 
-def  writeap(cid,aid,hid,fid,temp):
-    client = MongoClient('mongodb://Matiash:mth@45.8.230.173')
+
+def writeap(cid, aid, hid, fid, temp):
+    client = MongoClient("mongodb://Matiash:mth@45.8.230.173")
     db = client.get_database("gdms")
     col = db.get_collection("temp")
     post = {
-        "time": datetime.datetime.now(),
+        "time": [datetime.now().year, 
+            datetime.now().month, 
+            datetime.now().day, 
+            datetime.now().hour, 
+            datetime.now().minute
+        ],
         "cid": cid,
         "aid": aid,
         "hid": hid,
@@ -15,8 +22,9 @@ def  writeap(cid,aid,hid,fid,temp):
     }
     col.insert(post)
 
-def writecit(cid,temp):
-    client = MongoClient('mongodb://Matiash:mth@45.8.230.173')
+
+def writecit(cid, temp):
+    client = MongoClient("mongodb://Matiash:mth@45.8.230.173")
     db = client.get_database("gdms")
     col = db.get_collection("temp-c")
     post = {
