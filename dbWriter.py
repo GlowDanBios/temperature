@@ -29,7 +29,13 @@ def writecit(cid, temp):
     db = client.get_database("gdms")
     col = db.get_collection("temp-c")
     post = {
-        "time": datetime.datetime.now(),
+        "time": [
+            datetime.now().year, 
+            datetime.now().month, 
+            datetime.now().day, 
+            datetime.now().hour, 
+            datetime.now().minute
+        ],
         "cid": cid,
         "temp-c": temp
     }
