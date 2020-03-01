@@ -8,7 +8,8 @@ def writeap(cid, aid, hid, fid, temp):
     db = client.get_database("gdms")
     col = db.get_collection("temp")
     post = {
-        "time": [datetime.now().year, 
+        "time": [
+            datetime.now().year, 
             datetime.now().month, 
             datetime.now().day, 
             datetime.now().hour, 
