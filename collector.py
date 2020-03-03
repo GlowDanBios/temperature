@@ -13,11 +13,11 @@ def getaps():
         respa = requests.get(adr+str(cit['city_id']), headers=headers).json()
         for are in range(1,respa['data']['area_count']):
             resph = requests.get(adr+str(cit['city_id'])+"/"+str(are),headers=headers).json()
-            for hous in resph['data']:
-                resfin = requests.get(adr + str(cit['city_id'])+"/"+str(are) + "/"+str(hous['house_id'])+"/"+'1',headers=headers).json()
+            for i in range(15):
+                resfin = requests.get(adr + str(cit['city_id'])+"/"+str(are) + "/"+str(resph['data'][i]['house_id'])+"/"+'1',headers=headers).json()
                 t = float(resfin['data']["temperature"])
 
-                writeap(cit['city_id'], are, hous['house_id'], 1, t)
+                writeap(cit['city_id'], are, i, 1, t)
                 time.sleep(0.3)
 
 
