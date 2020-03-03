@@ -1,6 +1,5 @@
 import requests
 from dbWriter import writeap,writecit
-import time
 
 adr = "http://dt.miet.ru/ppo_it/api/"
 token = "6gjgr2u0mqzzx8hm"
@@ -11,6 +10,7 @@ def getaps():
     respc = requests.get(adr,headers=headers).json()
     for cit in respc['data']:
         respa = requests.get(adr+str(cit['city_id']), headers=headers).json()
+        writecit(respa['data']['city_id'],respa['data']['temperature'])
         for are in range(1,respa['data']['area_count']):
             resph = requests.get(adr+str(cit['city_id'])+"/"+str(are),headers=headers).json()
             for i in range(10):
@@ -20,11 +20,5 @@ def getaps():
                 writeap(cit['city_id'], are, i, 1, t)
 
 
-def getcit():
-    respc = requests.get(adr, headers=headers).text
-    for cit in respc['data']:
-        resp = respa = requests.get(adr+"/:"+cit['city_id'],headers=headers).text
-        writecit(cit['city_id'], resp['temperature'])
-
-
-getaps()
+while True:
+    getaps()
