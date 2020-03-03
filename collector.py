@@ -17,7 +17,7 @@ def getaps():
                 resfin = requests.get(adr + str(cit['city_id'])+"/"+str(are) + "/"+str(hous['house_id'])+"/"+'1',headers=headers).json()
                 t = float(resfin['data']["temperature"])
 
-                #writeap(cit['city_id'], are, hous['house_id'], 1, t)
+                writeap(cit['city_id'], are, hous['house_id'], 1, t)
                 time.sleep(0.3)
 
 
