@@ -18,7 +18,6 @@ def getaps():
                 t = float(resfin['data']["temperature"])
 
                 writeap(cit['city_id'], are, i, 1, t)
-                time.sleep(0.3)
 
 
 def getcit():
