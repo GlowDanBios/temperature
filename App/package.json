@@ -1,26 +1,27 @@
 {
   "name": "temp",
-  "productName": "temp",
+  "productName": "Temperature",
   "version": "1.0.0",
-  "description": "Temp",
+  "description": "Temperature",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
-    "publish": "electron-forge publish"
+    "publish": "electron-forge publish",
+    "lint": "eslint src --color"
   },
   "keywords": [],
-  "author": "gdms0918",
+  "author": "universai",
   "license": "MIT",
   "config": {
     "forge": {
       "make_targets": {
         "win32": [
-          "wix"
+          "msi"
         ],
         "darwin": [
-          "dmg"
+          "zip"
         ],
         "linux": [
           "deb",
@@ -31,23 +32,24 @@
         "packageManager": "yarn"
       },
       "electronWinstallerConfig": {
-        "name": "temp"
+        "name": "app"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
       "github_repository": {
-        "owner": "Matiashik",
-        "name": "Matiash"
+        "owner": "",
+        "name": ""
       },
       "windowsStoreConfig": {
         "packageName": "",
-        "name": "temp"
+        "name": "app"
       }
     }
   },
   "dependencies": {
     "electron-compile": "^6.4.4",
     "electron-squirrel-startup": "^1.0.0",
+    "google-charts": "^2.0.0",
     "mongodb": "^3.5.4"
   },
   "devDependencies": {

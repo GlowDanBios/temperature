@@ -13,15 +13,15 @@ let mainWindow;
 
 const createWindow = () => {
   mainWindow = new BrowserWindow({
-    width: 500,
-    height: 300,
+    width: 850,
+    height: 500,
     autoHideMenuBar: true,
     icon: `${pth}/res/100.png`,
   });
 
   mainWindow.loadFile(`${pth}/src/index.html`);
 
-  // mainWindow.webContents.openDevTools();
+  //mainWindow.webContents.openDevTools();
 
   mainWindow.on('closed', () => {
     mainWindow = null;
