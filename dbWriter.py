@@ -1,6 +1,5 @@
 from pymongo import MongoClient
 from datetime import datetime
-import random
 
 
 def writeap(cid, aid, hid, fid, temp):
@@ -27,7 +26,7 @@ def writeap(cid, aid, hid, fid, temp):
 def writecit(cid, temp):
     client = MongoClient("mongodb://Matiash:mth@45.8.230.173")
     db = client.get_database("gdms")
-    col = db.get_collection("temp-c")
+    col = db.get_collection("tempc")
     post = {
         "time": [
             datetime.now().year, 
@@ -37,6 +36,6 @@ def writecit(cid, temp):
             datetime.now().minute
         ],
         "cid": cid,
-        "temp-c": temp
+        "temp": temp
     }
     col.insert(post)
