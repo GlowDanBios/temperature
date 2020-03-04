@@ -4,10 +4,9 @@ const mongoClient = new MongoClient("mongodb://Matiash:mth@45.8.230.173", {
     useUnifiedTopology: true
 });
 
-var tempmap = new Map;
-var sum = 0;
-
-async function mongo() {
+async function main() {
+    var tempmap = new Map;
+    var sum = 0;
     let client = await mongoClient.connect();
     const db = client.db("gdms");
     const col = db.collection("temp");
@@ -35,4 +34,4 @@ async function mongo() {
         pie_1_chart.draw(data, options);
     }
     client.close()
-} mongo();
+} main();
