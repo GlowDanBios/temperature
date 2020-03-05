@@ -6,19 +6,17 @@ const mongoClient = new MongoClient("mongodb://Matiash:mth@45.8.230.173", {
 
 async function main() {
     var tempmap = new Map;
-    var sum = 0;
     let client = await mongoClient.connect();
     const db = client.db("gdms");
     const col = db.collection("temp");
     let res = await col.find({ cid: 1, aid: 1, hid: 1, fid: 1 }).toArray();
     res.forEach(el => {
         var a = el.temp;
-        if (isNaN(tempmap.get(a))) tempmap.set(a, a);
-        else tempmap.set(a, tempmap.get(a) + a);
-        sum += a;
+        if (isNaN(tempmap.get(a))) tempmap.set(a, 1);
+        else tempmap.set(a, tempmap.get(a) + 1);
     });
     var temparr = new Array();
-    temparr.push(["Temp.", "Sum"]);
+    temparr.push(["Temp.", "Count"]);
     tempmap.forEach((value, key) => {
         temparr.push([key.toString() + "°C", value]);
     });
