@@ -10,19 +10,19 @@ async function areas(cid) {
     //const n = await col.find({cid:cid,com:"NUM"})
     //const num = n.toArray()[0]['anum']
     let num = 5
-    let temparr = [['Area','Max Temp']];
-    for(let i = 1;i<num;i++) {
-        let res = await col.find({cid: cid, aid: i}).toArray();
+    let temparr = [['Area', 'Max Temp']];
+    for (let i = 1; i < num; i++) {
+        let res = await col.find({ cid: cid, aid: i }).toArray();
         let neores = [];
-        res.forEach(el=>neores.push(el['temp']))
-        let t = Math.max.apply(null,neores);
-        temparr.push([i.toString(),t])
+        res.forEach(el => neores.push(el['temp']))
+        let t = Math.max.apply(null, neores);
+        temparr.push([i.toString(), t])
     }
     const GoogleCharts = require("google-charts").GoogleCharts;
     GoogleCharts.load(drawChart);
     var options = {
         "title": "Temperature " + cid.toString(), "width": 900,
-        'explorer': {"actions": ["dragToZoom", "rightClickToReset"]},
+        'explorer': { "actions": ["dragToZoom", "rightClickToReset"] },
         //'animation': {"startup": true, "duration": 1000, "ease":'inAndOut'},
         legend: { position: 'none' },
         "height": 500
