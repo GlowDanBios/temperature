@@ -1,7 +1,24 @@
-const cities = {'Алмазный': 1, 'Восточный': 2, 'Западный': 3, 'Заречный': 4, 'Курортный': 5, 'Лесной': 6, 'Научный': 7, 'Полярный': 8, 'Портовый': 9, 'Приморский': 10, 'Садовый': 11, 'Северный': 12, 'Степной': 13, 'Таёжный': 14, 'Центральный': 15, 'Южный': 16}
+const cities = {
+    'Алмазный': 1,
+    'Восточный': 2,
+    'Западный': 3,
+    'Заречный': 4,
+    'Курортный': 5,
+    'Лесной': 6,
+    'Научный': 7,
+    'Полярный': 8,
+    'Портовый': 9,
+    'Приморский': 10,
+    'Садовый': 11,
+    'Северный': 12,
+    'Степной': 13,
+    'Таёжный': 14,
+    'Центральный': 15,
+    'Южный': 16
+}
 let select = document.getElementById('id');
 
-Object.keys(cities).forEach(el=> {
+Object.keys(cities).forEach(el => {
     let opt = document.createElement('option');
     opt.value = el;
     opt.innerHTML = el;
@@ -18,7 +35,9 @@ async function main() {
     const client = await mongoClient.connect();
     const db = client.db("gdms");
     const col = db.collection("temp");
-    let res = await col.find({cid: cid}).toArray();
+    let res = await col.find({
+        cid: cid
+    }).toArray();
     let temparr = [];
     let t = 0;
     let k = 0;
@@ -26,21 +45,23 @@ async function main() {
     res.forEach((el, index) => {
         if (el['aid'] == 1 && el['hid'] == 1 && index > 1) {
             temparr.push([i, t / k]);
-            k=0;
-            t=0;
+            k = 0;
+            t = 0;
             i++;
-        }
-        else{
-            t+=el['temp'];
+        } else {
+            t += el['temp'];
             k++;
         }
     });
     const GoogleCharts = require("google-charts").GoogleCharts;
     GoogleCharts.load(drawChart);
     const options = {
-        "title": "Temperature " + cid.toString(), "width": '80vh',
+        "title": "Temperature " + cid.toString(),
+        "width": '80vh',
         "curveType": 'function',
-        'explorer': {"actions": ["dragToZoom", "rightClickToReset"]},
+        'explorer': {
+            "actions": ["dragToZoom", "rightClickToReset"]
+        },
         //'animation': {"startup": true, "duration": 1000, "ease":'inAndOut'},
         "height": '80vh'
     };
@@ -50,7 +71,7 @@ async function main() {
         data.addColumn('number', 'INDEX');
         data.addColumn('number', 'TEMP');
         data.addRows(temparr);
-        const chart = new GoogleCharts.api.visualization.LineChart(document.getElementById("chart" ));
+        const chart = new GoogleCharts.api.visualization.LineChart(document.getElementById("chart"));
         chart.draw(data, options);
     }
 

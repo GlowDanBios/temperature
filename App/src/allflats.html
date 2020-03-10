@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -9,28 +10,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 </head>
+
 <body>
-<nav class="navbar">
-    <div class="navbar-menu">
-        <div class="navbar-start">
-            <a href="street.html" class="navbar-item">street</a>
-            <a href="flat.html" class="navbar-item">flat</a>
-            <a href="allflats.html" class="navbar-item is-tab is-active">allfalts</a>
-            <a href="areas.html" class="navbar-item">areas</a>
+    <nav class="navbar">
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a href="street.html" class="navbar-item">street</a>
+                <a href="flat.html" class="navbar-item">flat</a>
+                <a href="allflats.html" class="navbar-item is-tab is-active">allfalts</a>
+                <a href="areas.html" class="navbar-item">areas</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="column">
+        <div class="container">
+            <select id="id">
+                <option disabled>Выберите город</option>
+            </select>
+            <button onclick="main()">Построить</button>
+            <p class="content">Температура во всех квартирах одного города</p>
+            <script src="allflats.js"></script>
+            <div id="chart"></div>
         </div>
     </div>
-</nav>
-
-<div class="column">
-    <div class="container">
-        <select id="id">
-            <option disabled>Выберите город</option>
-        </select>
-        <button onclick="main()">Построить</button>
-        <p class="content">Температура во всех квартирах одного города</p>
-        <script src="allflats.js"></script>
-        <div id="chart"></div>
-    </div>
-</div>
 </body>
+
 </html>
