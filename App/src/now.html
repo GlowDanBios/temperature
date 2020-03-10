@@ -23,7 +23,24 @@
             </div>
         </div>
     </nav>
-    
+    <div class="column">
+        <div class="container">
+            <select id="id">
+                <option disabled>Выберите город</option>
+            </select>
+            <select id="id1">
+                <option disabled>Выберите район</option>
+            </select>
+            <select id="id2">
+                <option disabled>Выберите дом</option>
+            </select>
+            <button onclick="main()">Построить</button>
+            <p class="content">Температура в одной квартире в реальном времени</p>
+
+            <div id="temp"></div>
+        </div>
+    </div>
+    <script src="now.ts"></script>
 </body>
 
 </html>
