@@ -12,29 +12,52 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                <a href="street.html" class="navbar-item">Street</a>
-                <a href="flat.html" class="navbar-item">Flat</a>
-                <a href="allflats.html" class="navbar-item is-tab is-active">Mean</a>
-                <a href="areas.html" class="navbar-item">Areas</a>
-                <a href="now.html" class="navbar-item">Now</a>
-            </div>
-        </div>
-    </nav>
-
-    <div class="column">
-        <div class="container">
-            <select id="id">
-                <option disabled>Выберите город</option>
-            </select>
-            <button onclick="main()">Построить</button>
-            <p class="content">Температура во всех квартирах одного города</p>
-            <script src="allflats.js"></script>
-            <div id="chart"></div>
+<nav class="navbar">
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <a href="index.html" class="navbar-item"><strong>GDMS</strong></a>
+            <a href="street.html" class="navbar-item">Street</a>
+            <a href="flat.html" class="navbar-item">Flat</a>
+            <a href="allflats.html" class="navbar-item is-tab is-active">Mean</a>
+            <a href="areas.html" class="navbar-item">Areas</a>
+            <a href="now.html" class="navbar-item">Now</a>
         </div>
     </div>
+</nav>
+<br>
+<br>
+<section class="hero is-info">
+    <div class="hero-body">
+        <h2 class="subtitle"> График, отображающий изменения средней температуры в квартирах</h2>
+    </div>
+</section>
+<br>
+<br>
+<div class="columns">
+    <div class="column is-one-third">
+        <div class="container">
+            <div class="card">
+                <div class="card-content">
+                    <div class="columns">
+                        <div class="column">
+                            <select class="select is-info is-rounded" id="id">
+                                <option disabled>Выберите город</option>
+                            </select>
+                        </div>
+                        <div class="column">
+                            <button class="button is-small" onclick="main()">Построить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <p class="content">Средняя температура в квартирах в городе </p>
+        <script src="allflats.js"></script>
+        <div id="chart"></div>
+    </div>
+</div>
 </body>
 
 </html>

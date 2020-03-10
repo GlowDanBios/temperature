@@ -32,24 +32,24 @@ for (let i = 1; i <= 15; i += 1) {
     sec.add(option);
 }
 
-$('id').change(() => {
-    $('id1').find('option').remove()
+$('#id').change(async function () {
+    $('#id1').find('option').remove()
     window.id = $('#id').val()
-    let xhr = new XMLHttpRequest(),
-        url = 'http://127.0.0.1:8000/get_areas_list?city_id=' + window.id
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == XMLHttpRequest.DONE) {
-            response = JSON.parse(xhr.responseText)
-            areas_count = response.areas_count
-            $('#id1').append($("<option></option>").text('Не выбрано'));
-            for (i = 1; i <= areas_count; i++) {
-                $('#id1').append($("<option></option>").attr("value", i).text(i));
-            }
-        }
+    let url = await fetch('https://dt.miet.ru/ppo_it/api/' + cities[window.id], {headers: {'X-Auth-Token': '6gjgr2u0mqzzx8hm'}})
+    let response = await (await url.json()).data
+    let areas_count = response.area_count
+    let secs = document.getElementById('id1')
+    let option = document.createElement('option');
+    option.setAttribute('disabled', 'disabled')
+    option.value = option.text = "Выберите район";
+    secs.add(option);
+    for (let i = 1; i <= areas_count; i++) {
+        let option = document.createElement('option');
+        option.value = option.text = i;
+        secs.add(option);
     }
-    xhr.open('GET', url, true);
-    xhr.send();
 })
+
 
 async function main() {
     const MongoClient = require("mongodb").MongoClient;
@@ -64,12 +64,8 @@ async function main() {
     let client = await mongoClient.connect();
     const db = client.db("gdms");
     const col = db.collection("temp");
-    let res = await col.find({
-        cid: cid,
-        aid: aid,
-        hid: hid,
-        fid: 1
-    }).toArray();
+
+    let res = await col.find({cid: cid, aid: aid, hid: hid, fid: 1}).toArray();
     let temparr = [];
     res.forEach((el, index) => {
         temparr.push([index, el['temp']]);
@@ -77,8 +73,8 @@ async function main() {
     const GoogleCharts = require("google-charts").GoogleCharts;
     GoogleCharts.load(drawChart);
     const options = {
-        "title": "Temperature " + cid.toString(),
-        "width": 900,
+        "title": "Температура в квартире"  ,
+        "width": '60vh',
         "curveType": 'function',
         'explorer': {
             "actions": ["dragToZoom", "rightClickToReset"]
@@ -90,7 +86,7 @@ async function main() {
     function drawChart() {
         let data = new GoogleCharts.api.visualization.DataTable();
         data.addColumn('number', 'INDEX')
-        data.addColumn('number', 'TEMP')
+        data.addColumn('number', 'Температура')
         data.addRows(temparr)
         const chart = new GoogleCharts.api.visualization.LineChart(document.getElementById("chart"));
         chart.draw(data, options);

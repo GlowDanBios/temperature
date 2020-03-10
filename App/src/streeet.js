@@ -32,6 +32,7 @@ async function main() {
         useUnifiedTopology: true
     });
     const name = document.getElementById("id").value
+    document.getElementsByClassName("content")[0].innerHTML =  "Уличная температура в городе "+ name
     const cid = Number(cities[name])
     let client = await mongoClient.connect();
     const db = client.db("gdms");
@@ -46,20 +47,20 @@ async function main() {
     const GoogleCharts = require("google-charts").GoogleCharts;
     GoogleCharts.load(drawChart);
     const options = {
-        "title": "Temperature " + cid.toString(),
-        "width": 900,
+        "title": "Температура в городе " + name,
+        "width": "40vh",
         "curveType": 'function',
         'explorer': {
             "actions": ["dragToZoom", "rightClickToReset"]
         },
         //'animation': {"startup": true, "duration": 1000, "ease":'inAndOut'},
-        "height": 500
+        "height": "20vh"
     };
 
     function drawChart() {
         let data = new GoogleCharts.api.visualization.DataTable();
         data.addColumn('number', 'INDEX')
-        data.addColumn('number', 'TEMP')
+        data.addColumn('number', 'Температура')
         data.addRows(temparr)
         const chart = new GoogleCharts.api.visualization.LineChart(document.getElementById("chart"));
         chart.draw(data, options);

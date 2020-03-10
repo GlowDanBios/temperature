@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af07e531-2d6b-4296-91fb-26986c3e4aa0" name="Default Changelist" comment="" />
+    <list default="true" id="af07e531-2d6b-4296-91fb-26986c3e4aa0" name="Default Changelist" comment="поменял ts на js&#10;добавил базовую верстку">
+      <change afterPath="$PROJECT_DIR$/src/now.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allflats.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/allflats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allflats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/allflats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allflats.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/areas.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/areas.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/areas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/areas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/areas.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bulma.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bulma.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/flat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/flat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flat.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/now.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/now.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/now.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/streeet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/streeet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/street.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/street.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/street.ts" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583385441754</updated>
       <workItem from="1583385446415" duration="18480000" />
-      <workItem from="1583512477584" duration="14727000" />
+      <workItem from="1583512477584" duration="30462000" />
     </task>
     <task id="LOCAL-00001" summary="поменял ts на js&#10;добавил базовую верстку">
       <created>1583655982483</created>
@@ -125,30 +147,30 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583768070961" />
-    <state width="1259" height="143" key="GridCell.Tab.0.bottom" timestamp="1583820161283">
+    <state width="1259" height="143" key="GridCell.Tab.0.bottom" timestamp="1583844745963">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="143" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583820161283" />
-    <state width="1259" height="143" key="GridCell.Tab.0.center" timestamp="1583820161283">
+    <state width="1259" height="143" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583844745963" />
+    <state width="1259" height="143" key="GridCell.Tab.0.center" timestamp="1583844745963">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="143" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583820161283" />
-    <state width="1259" height="143" key="GridCell.Tab.0.left" timestamp="1583820161283">
+    <state width="1259" height="143" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583844745963" />
+    <state width="1259" height="143" key="GridCell.Tab.0.left" timestamp="1583844745963">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="143" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583820161283" />
-    <state width="1259" height="143" key="GridCell.Tab.0.right" timestamp="1583820161283">
+    <state width="1259" height="143" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583844745963" />
+    <state width="1259" height="143" key="GridCell.Tab.0.right" timestamp="1583844745963">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="143" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583820161283" />
+    <state width="1259" height="143" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583844745963" />
     <state x="345" y="48" key="MultipleFileMergeDialog" timestamp="1583385682666">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="345" y="48" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1583385682666" />
-    <state x="431" y="0" key="RollbackChangesDialog" timestamp="1583656541785">
+    <state x="431" y="0" key="RollbackChangesDialog" timestamp="1583827335551">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="431" y="0" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1583656541785" />
+    <state x="431" y="0" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1583827335551" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1583483875959">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -157,14 +179,18 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="70" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1583820390698" />
-    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583820426710">
+    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583827104654">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1583820426710" />
+    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1583827104654" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1583390860929">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="600" height="440" key="javadoc.popup/0.0.1280.680@0.0.1280.680" timestamp="1583390860929" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1583823710281">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1583823710281" />
     <state x="471" y="132" key="svn.repositoryBrowser" timestamp="1583481165752">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

@@ -24,6 +24,7 @@ Object.keys(cities).forEach(el => {
     opt.innerHTML = el;
     select.appendChild(opt);
 })
+
 async function main() {
     const MongoClient = require("mongodb").MongoClient;
     const mongoClient = new MongoClient("mongodb://Matiash:mth@45.8.230.173", {
@@ -32,6 +33,7 @@ async function main() {
     });
     const name = document.getElementById("id").value
     const cid = Number(cities[name])
+    document.getElementsByClassName("content")[0].innerHTML =  "Средняя температура в городе "+ name
     const client = await mongoClient.connect();
     const db = client.db("gdms");
     const col = db.collection("temp");
@@ -56,20 +58,20 @@ async function main() {
     const GoogleCharts = require("google-charts").GoogleCharts;
     GoogleCharts.load(drawChart);
     const options = {
-        "title": "Temperature " + cid.toString(),
-        "width": '80vh',
+        "title": "Температура в городе " + name,
+        "width": '40vh',
         "curveType": 'function',
         'explorer': {
             "actions": ["dragToZoom", "rightClickToReset"]
         },
         //'animation': {"startup": true, "duration": 1000, "ease":'inAndOut'},
-        "height": '80vh'
+        "height": '20vh'
     };
 
     function drawChart() {
         let data = new GoogleCharts.api.visualization.DataTable();
         data.addColumn('number', 'INDEX');
-        data.addColumn('number', 'TEMP');
+        data.addColumn('number', 'Температура');
         data.addRows(temparr);
         const chart = new GoogleCharts.api.visualization.LineChart(document.getElementById("chart"));
         chart.draw(data, options);

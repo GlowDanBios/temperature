@@ -36,19 +36,11 @@ async function main() {
     let client = await mongoClient.connect();
     const db = client.db("gdms");
     const col = db.collection("temp");
-    const k = await col.find({
-        cid: cid,
-        com: "NUM"
-    }).toArray()
+    const k = await col.find({cid: cid, com: "NUM"}).toArray()
     const num = k[0]['anum']
-    let temparr = [
-        ['Area', 'Max Temp']
-    ];
+    let temparr = [['Area', 'Max Temp']];
     for (let i = 1; i < num; i++) {
-        let res = await col.find({
-            cid: cid,
-            aid: i
-        }).toArray();
+        let res = await col.find({cid: cid, aid: i}).toArray();
         let neores = [];
         res.forEach(el => neores.push(el['temp']))
         let t = Math.max.apply(null, neores);
@@ -66,7 +58,6 @@ async function main() {
         legend: {
             position: 'none'
         },
-        "height": 500
     };
 
     function drawChart() {
@@ -74,5 +65,6 @@ async function main() {
         const chart = new GoogleCharts.api.visualization.ColumnChart(document.getElementById("chart"));
         chart.draw(data, options);
     }
+
     client.close()
 }

@@ -2,28 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="472fa0cd-83c6-49a3-9dc7-f491995858e2" name="Default Changelist" comment="структура приложения">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/temp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/temp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/App/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/App/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/allflats.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/allflats.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/allflats.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/allflats.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/allflats.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/allflats.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/areas.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/areas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/areas.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/areas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/areas.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/areas.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/flat.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/flat.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/flat.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/flat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/flat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/flat.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/jquerry.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/jquerry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/now.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/now.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/now.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/streeet.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/streeet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/street.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/street.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/street.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/street.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/collector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="170">
               <caret line="11" column="77" selection-start-line="10" selection-start-column="4" selection-end-line="11" selection-end-column="77" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -110,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -122,6 +112,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -221,6 +212,8 @@
       <workItem from="1583481293837" duration="2813000" />
       <workItem from="1583656082354" duration="1169000" />
       <workItem from="1583757107205" duration="790000" />
+      <workItem from="1583820493362" duration="3198000" />
+      <workItem from="1583845655868" duration="406000" />
     </task>
     <task id="LOCAL-00001" summary="уменьшил кол-во">
       <created>1583218708339</created>
@@ -285,16 +278,23 @@
       <option name="project" value="LOCAL" />
       <updated>1583656759993</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="верстка на 3/5">
+      <created>1583845717599</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1583845717599</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16678000" />
+    <option name="totallyTimeSpent" value="20282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.261924" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2700081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,11 +305,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32978722" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.32978722" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32978722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -332,7 +332,8 @@
     <MESSAGE value="добавил температуру в городах" />
     <MESSAGE value="структура приложения" />
     <MESSAGE value="поменял ts на js и добавил верстку" />
-    <option name="LAST_COMMIT_MESSAGE" value="поменял ts на js и добавил верстку" />
+    <MESSAGE value="верстка на 3/5" />
+    <option name="LAST_COMMIT_MESSAGE" value="верстка на 3/5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="808" y="632" width="1168" height="587" key="new project wizard" timestamp="1582991509143">
@@ -362,7 +363,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/collector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="170">
           <caret line="11" column="77" selection-start-line="10" selection-start-column="4" selection-end-line="11" selection-end-column="77" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
