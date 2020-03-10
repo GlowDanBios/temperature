@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Flat</title>
+    <title>Title</title>
     <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <link rel="stylesheet" type="text/css" href="bulma.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
-
 <body>
-    <p>Температура в одной квартире</p>
-    <a href="index.html">back</a>
+<nav class="navbar">
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <a href="street.html" class="navbar-item">street</a>
+            <a href="flat.html" class="navbar-item is-tab is-active">flat</a>
+            <a href="allflats.html" class="navbar-item">allfalts</a>
+            <a href="areas.html" class="navbar-item">areas</a>
 
-    <script src="flat.ts"></script>
-    <div id="chart"></div>
+        </div>
+    </div>
+</nav>
+<div class="column">
+    <div class="container">
+        <select id="id">
+            <option disabled>Выберите город</option>
+        </select>
+        <select id="id1">
+            <option disabled>Выберите район</option>
+        </select>
+        <select id="id2">
+            <option disabled>Выберите дом</option>
+        </select>
+        <button onclick="main()">Построить</button>
+        <p class="content">Температура в одной квартире</p>
+
+        <div id="chart"></div>
+    </div>
+</div>
+<script src="flat.js"></script>
+
 </body>
-
 </html>

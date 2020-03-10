@@ -1,9 +1,9 @@
 {
-  "name": "temp",
-  "productName": "Temperature",
+  "name": "app",
+  "productName": "app",
   "version": "1.0.0",
   "description": "Temperature",
-  "main": "src/index.ts",
+  "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -12,13 +12,13 @@
     "lint": "eslint src --color"
   },
   "keywords": [],
-  "author": "universai",
+  "author": "GDaniel",
   "license": "MIT",
   "config": {
     "forge": {
       "make_targets": {
         "win32": [
-          "msi"
+          "squirrel"
         ],
         "darwin": [
           "zip"
@@ -29,7 +29,7 @@
         ]
       },
       "electronPackagerConfig": {
-        "packageManager": "yarn"
+        "packageManager": "npm"
       },
       "electronWinstallerConfig": {
         "name": "app"
@@ -47,12 +47,13 @@
     }
   },
   "dependencies": {
+    "bulma": "^0.8.0",
     "electron": "^8.1.0",
     "electron-compile": "^6.4.4",
     "electron-squirrel-startup": "^1.0.0",
-    "mongodb": "^3.5.4",
-    "request-promise": "^4.2.5",
-    "yarn": "^1.22.0"
+    "google-charts": "^2.0.0",
+    "jquery": "^3.4.1",
+    "mongodb": "^3.5.4"
   },
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1",
@@ -60,11 +61,10 @@
     "babel-preset-react": "^6.24.1",
     "electron-forge": "^5.2.4",
     "electron-prebuilt-compile": "4.0.0",
-    "eslint": "^3",
-    "eslint-config-airbnb": "^15",
-    "eslint-plugin-import": "^2",
-    "eslint-plugin-jsx-a11y": "^5",
-    "eslint-plugin-react": "^7",
-    "google-charts": "^2.0.0"
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.18.3"
   }
 }

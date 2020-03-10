@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af07e531-2d6b-4296-91fb-26986c3e4aa0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/temp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/temp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.compilerc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/tasks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/500.png" beforeDir="false" />
-    </list>
+    <list default="true" id="af07e531-2d6b-4296-91fb-26986c3e4aa0" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,11 +12,12 @@
       <list>
         <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
@@ -47,6 +38,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/WebstormProjects/el_app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -55,8 +47,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
     <property name="ts.external.directory.path" value="C:\Users\hp\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\193.6494.34\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hp\PycharmProjects\temperature\App\src" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
@@ -78,50 +76,91 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1583385441754</updated>
-      <workItem from="1583385446415" duration="14181000" />
+      <workItem from="1583385446415" duration="18480000" />
+      <workItem from="1583512477584" duration="14727000" />
     </task>
+    <task id="LOCAL-00001" summary="поменял ts на js&#10;добавил базовую верстку">
+      <created>1583655982483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583655982483</updated>
+    </task>
+    <task id="LOCAL-00002" summary="поменял ts на js&#10;добавил базовую верстку">
+      <created>1583820308205</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583820308205</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="поменял ts на js&#10;добавил базовую верстку" />
+    <option name="LAST_COMMIT_MESSAGE" value="поменял ts на js&#10;добавил базовую верстку" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583385851278">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583490745487">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583385851278" />
-    <state x="359" y="23" key="#start" timestamp="1583386240451">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1583490745487" />
+    <state x="359" y="23" key="#start" timestamp="1583490972910">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="359" y="23" key="#start/0.0.1280.680@0.0.1280.680" timestamp="1583386240451" />
-    <state width="1259" height="143" key="GridCell.Tab.0.bottom" timestamp="1583480631199">
+    <state x="359" y="23" key="#start/0.0.1280.680@0.0.1280.680" timestamp="1583490972910" />
+    <state x="263" y="0" key="CommitChangelistDialog2" timestamp="1583820413965">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="143" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583480631199" />
-    <state width="1259" height="143" key="GridCell.Tab.0.center" timestamp="1583480631199">
+    <state x="263" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1583820413965" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1583768070961">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="143" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583480631199" />
-    <state width="1259" height="143" key="GridCell.Tab.0.left" timestamp="1583480631199">
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583768070961" />
+    <state width="1259" height="143" key="GridCell.Tab.0.bottom" timestamp="1583820161283">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="143" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583480631199" />
-    <state width="1259" height="143" key="GridCell.Tab.0.right" timestamp="1583480631199">
+    <state width="1259" height="143" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583820161283" />
+    <state width="1259" height="143" key="GridCell.Tab.0.center" timestamp="1583820161283">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="143" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583480631199" />
+    <state width="1259" height="143" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583820161283" />
+    <state width="1259" height="143" key="GridCell.Tab.0.left" timestamp="1583820161283">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="143" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583820161283" />
+    <state width="1259" height="143" key="GridCell.Tab.0.right" timestamp="1583820161283">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="143" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583820161283" />
     <state x="345" y="48" key="MultipleFileMergeDialog" timestamp="1583385682666">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="345" y="48" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1583385682666" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1583385580959">
+    <state x="431" y="0" key="RollbackChangesDialog" timestamp="1583656541785">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583385580959" />
-    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583385655054">
+    <state x="431" y="0" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1583656541785" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1583483875959">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1583385655054" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583483875959" />
+    <state x="233" y="70" key="Vcs.Push.Dialog.v2" timestamp="1583820390698">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="70" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1583820390698" />
+    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1583820426710">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1583820426710" />
     <state width="600" height="440" key="javadoc.popup" timestamp="1583390860929">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
