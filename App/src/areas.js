@@ -49,11 +49,12 @@ async function main() {
     const GoogleCharts = require("google-charts").GoogleCharts;
     GoogleCharts.load(drawChart);
     const options = {
-        "title": "Temperature " + cid.toString(),
-        "width": 900,
+        "title": "Температура в районах города  " + name,
+        "width": "40vh",
         'explorer': {
             "actions": ["dragToZoom", "rightClickToReset"]
         },
+        "height": "20vh",
         //'animation': {"startup": true, "duration": 1000, "ease":'inAndOut'},
         legend: {
             position: 'none'

@@ -93,10 +93,10 @@ Object.keys(cities).forEach(el => {
 })
 async function main() {
     document.getElementById("temp").innerHTML = ""
-    document.getElementById("temp").innerHTML += `<h1>${await now({
+    document.getElementById("temp").innerHTML += `<strong>${await now({
         cid: cities[document.getElementById("id").value],
         aid: Number(Number(document.getElementById("id1").value)+1),
         hid: Number(document.getElementById("id2").value),
         fid: Number(document.getElementById("id3").value)
-    })}</h1>`
+    })}°</strong>`
 }
