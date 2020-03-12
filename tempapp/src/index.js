@@ -18,6 +18,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     autoHideMenuBar: true,
+    icon: "res/128.png"
   });
   mainWindow.maximize();
   // and load the index.html of the app.
