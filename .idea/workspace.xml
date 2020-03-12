@@ -3,18 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="472fa0cd-83c6-49a3-9dc7-f491995858e2" name="Default Changelist" comment="структура приложения">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/App/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/allflats.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/allflats.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/allflats.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/allflats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/areas.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/areas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/areas.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/areas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/flat.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/flat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/flat.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/flat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/jquerry.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/jquerry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/now.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/now.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/now.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/streeet.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/streeet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/street.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/street.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/now.js" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/now.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +206,7 @@
       <workItem from="1583656082354" duration="1169000" />
       <workItem from="1583757107205" duration="790000" />
       <workItem from="1583820493362" duration="3198000" />
-      <workItem from="1583845655868" duration="406000" />
+      <workItem from="1583845655868" duration="1655000" />
     </task>
     <task id="LOCAL-00001" summary="уменьшил кол-во">
       <created>1583218708339</created>
@@ -289,10 +282,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20282000" />
+    <option name="totallyTimeSpent" value="21531000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2700081" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
