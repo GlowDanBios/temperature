@@ -29,20 +29,20 @@ $('#id').change(async function () {
     option.setAttribute('disabled', 'disabled')
     option.value = option.text = "Выберите район";
     secs.add(option);
-    for (let i = 1; i <= areas_count; i++) {
+    for (let i = 1; i < areas_count; i++) {
         let option = document.createElement('option');
         option.value = option.text = i;
         secs.add(option);
     }
     let urp = await fetch('https://dt.miet.ru/ppo_it/api/' + cities[$('#id').val()] + '/' + 1, {headers: {'X-Auth-Token': '6gjgr2u0mqzzx8hm'}})
-    let respoe = await (await urp.json()).data
+    let respoe = await (await urp.json())
     let house_Count = respoe.length
     let s = document.getElementById('id2')
     let o = document.createElement('option');
     o.setAttribute('disabled', 'disabled')
     o.text = "Выберите дом";
     s.add(o);
-    for (let i = 1; i <= house_Count; i++) {
+    for (let i = 1; i < house_Count-1; i++) {
         let option = document.createElement('option');
         option.value = option.text = i;
         s.add(option);
@@ -55,7 +55,7 @@ $('#id').change(async function () {
     opt.setAttribute('disabled', 'disabled')
     opt.value = opt.text = "Выберите квартиру";
     se.add(opt);
-    for (let i = 1; i <= ap_Count; i++) {
+    for (let i = 1; i < ap_Count; i++) {
         let option = document.createElement('option');
         option.value = option.text = i;
         se.add(option);
@@ -74,7 +74,7 @@ $('#id1').change(async function () {
     optio.setAttribute('disabled', 'disabled')
     optio.text = "Выберите дом";
     secs.add(optio);
-    for (let i = 1; i <= house_Count; i++) {
+    for (let i = 1; i < house_Count; i++) {
         let option = document.createElement('option');
         option.value = option.text = i;
         secs.add(option);
@@ -87,7 +87,7 @@ $('#id1').change(async function () {
     opt.setAttribute('disabled', 'disabled')
     opt.value = opt.text = "Выберите квартиру";
     se.add(opt);
-    for (let i = 1; i <= ap_Count; i++) {
+    for (let i = 1; i < ap_Count; i++) {
         let option = document.createElement('option');
         option.value = option.text = i;
         se.add(option);
@@ -104,7 +104,7 @@ $('#id2').change(async function () {
     option.setAttribute('disabled', 'disabled')
     option.value = option.text = "Выберите квартиру";
     secs.add(option);
-    for (let i = 1; i <= ap_Count; i++) {
+    for (let i = 1; i < ap_Count; i++) {
         let option = document.createElement('option');
         option.value = option.text = i;
         secs.add(option);
@@ -134,7 +134,7 @@ async function main() {
     document.getElementById("temp").innerHTML = ""
     document.getElementById("temp").innerHTML += `<strong>${await now({
         cid: cities[document.getElementById("id").value],
-        aid: Number(Number(document.getElementById("id1").value) + 1),
+        aid: Number(document.getElementById("id1").value),
         hid: Number(document.getElementById("id2").value),
         fid: Number(document.getElementById("id3").value)
     })}°</strong>`

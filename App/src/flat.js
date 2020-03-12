@@ -26,7 +26,7 @@ Object.keys(cities).forEach(el => {
 })
 
 let sec = document.getElementById('id2');
-for (let i = 1; i <= 15; i += 1) {
+for (let i = 1; i < 10; i += 1) {
     let option = document.createElement('option');
     option.value = option.text = i;
     sec.add(option);
@@ -43,7 +43,7 @@ $('#id').change(async function () {
     option.setAttribute('disabled', 'disabled')
     option.value = option.text = "Выберите район";
     secs.add(option);
-    for (let i = 1; i <= areas_count; i++) {
+    for (let i = 1; i < areas_count; i++) {
         let option = document.createElement('option');
         option.value = option.text = i;
         secs.add(option);
@@ -64,7 +64,6 @@ async function main() {
     let client = await mongoClient.connect();
     const db = client.db("gdms");
     const col = db.collection("temp");
-
     let res = await col.find({cid: cid, aid: aid, hid: hid, fid: 1}).toArray();
     let temparr = [];
     res.forEach((el, index) => {

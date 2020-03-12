@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/src/areas.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/areas.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/areas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/areas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/flat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/flat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/flat.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/now.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/now.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/now.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/now.js" afterDir="false" />
     </list>
@@ -85,7 +87,7 @@
       <updated>1583385441754</updated>
       <workItem from="1583385446415" duration="18480000" />
       <workItem from="1583512477584" duration="37172000" />
-      <workItem from="1583993369595" duration="3272000" />
+      <workItem from="1583993369595" duration="6087000" />
     </task>
     <task id="LOCAL-00001" summary="поменял ts на js&#10;добавил базовую верстку">
       <created>1583655982483</created>
@@ -133,22 +135,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1583768070961" />
-    <state width="1259" height="56" key="GridCell.Tab.0.bottom" timestamp="1583995459164">
+    <state width="1259" height="56" key="GridCell.Tab.0.bottom" timestamp="1584000100359">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="56" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583995459164" />
-    <state width="1259" height="56" key="GridCell.Tab.0.center" timestamp="1583995459164">
+    <state width="1259" height="56" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1584000100359" />
+    <state width="1259" height="56" key="GridCell.Tab.0.center" timestamp="1584000100358">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="56" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583995459164" />
-    <state width="1259" height="56" key="GridCell.Tab.0.left" timestamp="1583995459163">
+    <state width="1259" height="56" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1584000100358" />
+    <state width="1259" height="56" key="GridCell.Tab.0.left" timestamp="1584000100357">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="56" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583995459163" />
-    <state width="1259" height="56" key="GridCell.Tab.0.right" timestamp="1583995459164">
+    <state width="1259" height="56" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1584000100357" />
+    <state width="1259" height="56" key="GridCell.Tab.0.right" timestamp="1584000100358">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="56" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583995459164" />
+    <state width="1259" height="56" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1584000100358" />
     <state x="345" y="48" key="MultipleFileMergeDialog" timestamp="1583385682666">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
