@@ -137,5 +137,5 @@ async function main() {
         aid: Number(document.getElementById("id1").value),
         hid: Number(document.getElementById("id2").value),
         fid: Number(document.getElementById("id3").value)
-    })}°</strong>`
+    })}°C</strong>`
 }

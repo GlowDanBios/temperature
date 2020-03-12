@@ -1,7 +1,7 @@
 {
-  "name": "temp",
+  "name": "temperature",
   "productName": "Temperature",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Данное приложение разработано в рамках предпрофессиональной олимпиады. Инженерно-конструкторское направление, профиль информационные технологии",
   "main": "src/index.js",
   "scripts": {
@@ -32,7 +32,7 @@
         "packageManager": "npm"
       },
       "electronWinstallerConfig": {
-        "name": "app"
+        "name": "tempapp"
       },
       "electronInstallerDebian": {},
       "electronInstallerRedhat": {},
@@ -42,7 +42,7 @@
       },
       "windowsStoreConfig": {
         "packageName": "",
-        "name": "app"
+        "name": "tempapp"
       }
     }
   },
@@ -53,7 +53,7 @@
     "electron-squirrel-startup": "^1.0.0",
     "google-charts": "^2.0.0",
     "jquery": "^3.4.1",
-    "mongodb": "^3.5.4"
+    "mongodb": "^3.5.5"
   },
   "devDependencies": {
     "babel-plugin-transform-async-to-generator": "^6.24.1",
