@@ -1,7 +1,8 @@
 {
-  "name": "temperature",
+  "name": "Temperature",
   "productName": "Temperature",
   "version": "0.0.1",
+  "icon": "res/512.png",
   "description": "Данное приложение разработано в рамках предпрофессиональной олимпиады. Инженерно-конструкторское направление, профиль информационные технологии",
   "main": "src/index.js",
   "scripts": {
