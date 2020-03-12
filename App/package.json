@@ -1,8 +1,8 @@
 {
-  "name": "app",
-  "productName": "app",
+  "name": "temp",
+  "productName": "Temperature",
   "version": "1.0.0",
-  "description": "Temperature",
+  "description": "Данное приложение разработано в рамках предпрофессиональной олимпиады. Инженерно-конструкторское направление, профиль информационные технологии",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -12,7 +12,7 @@
     "lint": "eslint src --color"
   },
   "keywords": [],
-  "author": "GDaniel",
+  "author": "GDan&Universai",
   "license": "MIT",
   "config": {
     "forge": {
