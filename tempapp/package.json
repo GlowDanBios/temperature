@@ -29,7 +29,8 @@
         ]
       },
       "electronPackagerConfig": {
-        "packageManager": "npm"
+        "packageManager": "npm",
+        "icon": "src/static/256 (1).ico"
       },
       "electronWinstallerConfig": {
         "name": "tempapp"
@@ -48,7 +49,7 @@
   },
   "dependencies": {
     "bulma": "^0.8.0",
-    "electron": "^8.1.0",
+    "electron": "^8.1.1",
     "electron-compile": "^6.4.4",
     "electron-squirrel-startup": "^1.0.0",
     "google-charts": "^2.0.0",
