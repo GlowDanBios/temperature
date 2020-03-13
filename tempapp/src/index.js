@@ -19,6 +19,7 @@ const createWindow = () => {
     width: 800,
     height: 600,
     autoHideMenuBar: true,
+    icon: "res/128.png"
   });
   mainWindow.setIcon(path.join(__dirname, 'static/256 (1).ico'));
   mainWindow.maximize();
