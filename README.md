@@ -8,4 +8,8 @@
 
 ## Установка скомпилированого варианта для windows: 
 https://drive.google.com/open?id=125dHPLIuCeaDpb3q3WiIbWV0r_xt0-9N
+
 Запускать Temperature-0.0.1 Setup.exe
+
+## Установка для Linux (deb-only)
+https://yadi.sk/d/SZ-Xy47kd7ZHzw
