@@ -21,7 +21,7 @@ const createWindow = () => {
     autoHideMenuBar: true,
     icon: "res/128.png"
   });
-  mainWindow.setIcon(path.join(__dirname, 'static/256 (1).ico'));
+  mainWindow.setIcon(path.join(__dirname, 'static/256.png'));
   mainWindow.maximize();
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`);
